@@ -11,35 +11,30 @@ import CoreData
 class ViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
-    var dataSourceA: ArrayDataSource<ItemA, ExampleCellA>!
-    var dataSourceB: ArrayDataSource<ItemB, ExampleCellB>!
-    var dataSourceC: ArrayDataSource<ItemC, ExampleCellC>!
+    private var collectionViewDataSourceDelegate: CollectionViewDataSourceDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSourceA = ArrayDataSource<ItemA, ExampleCellA>(from: Items.allA, collectionView: collectionView)
-        dataSourceB = ArrayDataSource<ItemB, ExampleCellB>(from: Items.allB, collectionView: collectionView)
-        dataSourceC = ArrayDataSource<ItemC, ExampleCellC>(from: Items.allC, collectionView: collectionView)
+        let animals = [
+            Animal(name: "Akita", description: "Massive Pupper", weight: 160),
+            Animal(name: "Kangal", description: "Massive Eurpean Pupper", weight: 260),
+            Animal(name: "Mastiff", description: "Massive Animal", weight: 240),
+            Animal(name: "Pitbull", description: "Really just a teddy bear", weight: 120),
+        ]
         
-        setDataSource(source: dataSourceA)
-    }
-    
-    func setDataSource(source: UICollectionViewDelegate & UICollectionViewDataSource) {
-        collectionView.dataSource = source
-        collectionView.delegate = source
-        collectionView.reloadData()
-    }
-
-    @IBAction func segmentedControlStateChanged(_ sender: UISegmentedControl) {
-        switch sender.selectedSegmentIndex {
-        case 0:
-            setDataSource(source: dataSourceA)
-        case 1:
-            setDataSource(source: dataSourceB)
-        case 2:
-            setDataSource(source: dataSourceC)
-        default:
-            break
-        }
+        let cars = [
+            Car(name: "Maserati", description: "Now comes as a SUV", imageEnum: .one),
+            Car(name: "Bugatti", description: "Dream baby dream", imageEnum: .two),
+            Car(name: "Tesla", description: "Probably the best SUV around, and eco friendly", imageEnum: .three),
+        ]
+        
+        let animalViewModels: [ExpressibleCollectionViewCell] = animals.flatMap(AnimalViewModel.init)
+        let carViewModels: [ExpressibleCollectionViewCell] = cars.flatMap(CarViewModel.init)
+        
+        var allViewModels = animalViewModels + carViewModels
+        allViewModels.append(CarDetailViewModel(data: cars[0]))
+        
+        collectionViewDataSourceDelegate = CollectionViewDataSourceDelegate(items: allViewModels)
+        collectionViewDataSourceDelegate.register(with: collectionView)
     }
 }

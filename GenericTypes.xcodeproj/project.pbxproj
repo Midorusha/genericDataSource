@@ -7,22 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CA17E131F7C4A89007EBE49 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA17E121F7C4A89007EBE49 /* CarDetailView.swift */; };
+		4CA17E151F7C4A93007EBE49 /* CarDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA17E141F7C4A93007EBE49 /* CarDetailView.xib */; };
+		4CE43CE31F7C0B14004B9FAD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CE21F7C0B14004B9FAD /* ViewModel.swift */; };
+		4CE43CE51F7C0B2A004B9FAD /* ExpressibleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CE41F7C0B2A004B9FAD /* ExpressibleInterface.swift */; };
+		4CE43CE71F7C0B44004B9FAD /* ExpressedAsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CE61F7C0B44004B9FAD /* ExpressedAsView.swift */; };
+		4CE43CE91F7C0B67004B9FAD /* ExpressibleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CE81F7C0B67004B9FAD /* ExpressibleCollectionViewCell.swift */; };
+		4CE43CEB1F7C0EF2004B9FAD /* ExpressedCollectionViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CEA1F7C0EF2004B9FAD /* ExpressedCollectionViewCellType.swift */; };
+		4CE43CED1F7C0F48004B9FAD /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CEC1F7C0F48004B9FAD /* ConfigurableView.swift */; };
+		4CE43CEF1F7C0F64004B9FAD /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CEE1F7C0F64004B9FAD /* Animal.swift */; };
+		4CE43CF21F7C0F8A004B9FAD /* AnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CF11F7C0F8A004B9FAD /* AnimalViewModel.swift */; };
+		4CE43CF51F7C0FED004B9FAD /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CF41F7C0FED004B9FAD /* AnimalView.swift */; };
+		4CE43CF81F7C1011004B9FAD /* AnimalDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CF71F7C1011004B9FAD /* AnimalDetailCollectionViewCell.swift */; };
+		4CE43CFA1F7C109D004B9FAD /* AnimalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CF91F7C109D004B9FAD /* AnimalCollectionViewCell.swift */; };
+		4CE43CFC1F7C116F004B9FAD /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CFB1F7C116F004B9FAD /* Car.swift */; };
+		4CE43CFE1F7C1183004B9FAD /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CFD1F7C1183004B9FAD /* CarViewModel.swift */; };
+		4CE43D001F7C124E004B9FAD /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CFF1F7C124E004B9FAD /* CarCollectionViewCell.swift */; };
+		4CE43D021F7C126F004B9FAD /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43D011F7C126F004B9FAD /* CarView.swift */; };
+		4CE43D041F7C12AC004B9FAD /* CarDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43D031F7C12AC004B9FAD /* CarDetailCollectionViewCell.swift */; };
+		4CE43D061F7C13E8004B9FAD /* NibDefinedBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43D051F7C13E8004B9FAD /* NibDefinedBaseView.swift */; };
+		4CE43D081F7C1403004B9FAD /* NibDefinedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43D071F7C1403004B9FAD /* NibDefinedView.swift */; };
+		4CE43D0C1F7C1503004B9FAD /* AnimalDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE43D0B1F7C1503004B9FAD /* AnimalDetailCollectionViewCell.xib */; };
+		4CE43D0E1F7C152E004B9FAD /* AnimalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE43D0D1F7C152E004B9FAD /* AnimalCollectionViewCell.xib */; };
+		4CE43D101F7C153B004B9FAD /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE43D0F1F7C153B004B9FAD /* CarCollectionViewCell.xib */; };
+		4CE43D121F7C154E004B9FAD /* CarDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE43D111F7C154E004B9FAD /* CarDetailCollectionViewCell.xib */; };
+		4CE43D141F7C155F004B9FAD /* AnimalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE43D131F7C155F004B9FAD /* AnimalView.xib */; };
+		4CE43D161F7C1574004B9FAD /* CarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE43D151F7C1574004B9FAD /* CarView.xib */; };
 		F2F95D0F1F72F9FC0049D380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D0E1F72F9FC0049D380 /* AppDelegate.swift */; };
 		F2F95D111F72F9FC0049D380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D101F72F9FC0049D380 /* ViewController.swift */; };
 		F2F95D141F72F9FC0049D380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F95D121F72F9FC0049D380 /* Main.storyboard */; };
 		F2F95D161F72F9FC0049D380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F95D151F72F9FC0049D380 /* Assets.xcassets */; };
 		F2F95D191F72F9FC0049D380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F95D171F72F9FC0049D380 /* LaunchScreen.storyboard */; };
-		F2F95D261F7437F80049D380 /* ExampleCellA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D251F7437F80049D380 /* ExampleCellA.swift */; };
-		F2F95D281F7438060049D380 /* ExampleCellB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D271F7438060049D380 /* ExampleCellB.swift */; };
-		F2F95D2A1F7438150049D380 /* ExampleCellC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D291F7438150049D380 /* ExampleCellC.swift */; };
-		F2F95D2D1F7438810049D380 /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D2C1F7438810049D380 /* CellConfigurable.swift */; };
 		F2F95D2F1F74392F0049D380 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D2E1F74392F0049D380 /* Items.swift */; };
 		F2F95D311F7441920049D380 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D301F7441920049D380 /* CollectionViewDataSource.swift */; };
-		F2F95D341F758B890049D380 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D331F758B890049D380 /* ArrayDataSource.swift */; };
-		F2F95D421F75C0DC0049D380 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F95D411F75C0DC0049D380 /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CA17E121F7C4A89007EBE49 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
+		4CA17E141F7C4A93007EBE49 /* CarDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarDetailView.xib; sourceTree = "<group>"; };
+		4CE43CE21F7C0B14004B9FAD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4CE43CE41F7C0B2A004B9FAD /* ExpressibleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressibleInterface.swift; sourceTree = "<group>"; };
+		4CE43CE61F7C0B44004B9FAD /* ExpressedAsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressedAsView.swift; sourceTree = "<group>"; };
+		4CE43CE81F7C0B67004B9FAD /* ExpressibleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressibleCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CE43CEA1F7C0EF2004B9FAD /* ExpressedCollectionViewCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressedCollectionViewCellType.swift; sourceTree = "<group>"; };
+		4CE43CEC1F7C0F48004B9FAD /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		4CE43CEE1F7C0F64004B9FAD /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		4CE43CF11F7C0F8A004B9FAD /* AnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewModel.swift; sourceTree = "<group>"; };
+		4CE43CF41F7C0FED004B9FAD /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
+		4CE43CF71F7C1011004B9FAD /* AnimalDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CE43CF91F7C109D004B9FAD /* AnimalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CE43CFB1F7C116F004B9FAD /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		4CE43CFD1F7C1183004B9FAD /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		4CE43CFF1F7C124E004B9FAD /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CE43D011F7C126F004B9FAD /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		4CE43D031F7C12AC004B9FAD /* CarDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CE43D051F7C13E8004B9FAD /* NibDefinedBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDefinedBaseView.swift; sourceTree = "<group>"; };
+		4CE43D071F7C1403004B9FAD /* NibDefinedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDefinedView.swift; sourceTree = "<group>"; };
+		4CE43D0B1F7C1503004B9FAD /* AnimalDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalDetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		4CE43D0D1F7C152E004B9FAD /* AnimalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalCollectionViewCell.xib; sourceTree = "<group>"; };
+		4CE43D0F1F7C153B004B9FAD /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
+		4CE43D111F7C154E004B9FAD /* CarDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarDetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		4CE43D131F7C155F004B9FAD /* AnimalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalView.xib; sourceTree = "<group>"; };
+		4CE43D151F7C1574004B9FAD /* CarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarView.xib; sourceTree = "<group>"; };
 		F2F95D0B1F72F9FC0049D380 /* GenericTypes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericTypes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F95D0E1F72F9FC0049D380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F95D101F72F9FC0049D380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,14 +76,8 @@
 		F2F95D151F72F9FC0049D380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F95D181F72F9FC0049D380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2F95D1A1F72F9FC0049D380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2F95D251F7437F80049D380 /* ExampleCellA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCellA.swift; sourceTree = "<group>"; };
-		F2F95D271F7438060049D380 /* ExampleCellB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCellB.swift; sourceTree = "<group>"; };
-		F2F95D291F7438150049D380 /* ExampleCellC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCellC.swift; sourceTree = "<group>"; };
-		F2F95D2C1F7438810049D380 /* CellConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
 		F2F95D2E1F74392F0049D380 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		F2F95D301F7441920049D380 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
-		F2F95D331F758B890049D380 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
-		F2F95D411F75C0DC0049D380 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +91,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CE43CF01F7C0F78004B9FAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4CE43CF11F7C0F8A004B9FAD /* AnimalViewModel.swift */,
+				4CE43CFD1F7C1183004B9FAD /* CarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4CE43CF31F7C0FD4004B9FAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CE43CF61F7C1002004B9FAD /* CollectionCells */,
+				4CE43CF41F7C0FED004B9FAD /* AnimalView.swift */,
+				4CE43D131F7C155F004B9FAD /* AnimalView.xib */,
+				4CE43D011F7C126F004B9FAD /* CarView.swift */,
+				4CE43D151F7C1574004B9FAD /* CarView.xib */,
+				4CA17E121F7C4A89007EBE49 /* CarDetailView.swift */,
+				4CA17E141F7C4A93007EBE49 /* CarDetailView.xib */,
+				4CE43D071F7C1403004B9FAD /* NibDefinedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CE43CF61F7C1002004B9FAD /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				4CE43CF71F7C1011004B9FAD /* AnimalDetailCollectionViewCell.swift */,
+				4CE43D0B1F7C1503004B9FAD /* AnimalDetailCollectionViewCell.xib */,
+				4CE43CF91F7C109D004B9FAD /* AnimalCollectionViewCell.swift */,
+				4CE43D0D1F7C152E004B9FAD /* AnimalCollectionViewCell.xib */,
+				4CE43CFF1F7C124E004B9FAD /* CarCollectionViewCell.swift */,
+				4CE43D0F1F7C153B004B9FAD /* CarCollectionViewCell.xib */,
+				4CE43D031F7C12AC004B9FAD /* CarDetailCollectionViewCell.swift */,
+				4CE43D111F7C154E004B9FAD /* CarDetailCollectionViewCell.xib */,
+			);
+			path = CollectionCells;
+			sourceTree = "<group>";
+		};
 		F252FF221F7958CE0068F423 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +161,9 @@
 				F252FF221F7958CE0068F423 /* ViewControllers */,
 				F2F95D3E1F7596CF0049D380 /* CollectionViewDataSources */,
 				F2F95D321F75723D0049D380 /* Models */,
+				4CE43CF01F7C0F78004B9FAD /* ViewModels */,
 				F2F95D2B1F74383B0049D380 /* Protocols */,
-				F2F95D241F74372F0049D380 /* CollectionViewCells */,
+				4CE43CF31F7C0FD4004B9FAD /* Views */,
 				F2F95D121F72F9FC0049D380 /* Main.storyboard */,
 				F2F95D151F72F9FC0049D380 /* Assets.xcassets */,
 				F2F95D171F72F9FC0049D380 /* LaunchScreen.storyboard */,
@@ -92,21 +172,16 @@
 			path = GenericTypes;
 			sourceTree = "<group>";
 		};
-		F2F95D241F74372F0049D380 /* CollectionViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				F2F95D251F7437F80049D380 /* ExampleCellA.swift */,
-				F2F95D271F7438060049D380 /* ExampleCellB.swift */,
-				F2F95D291F7438150049D380 /* ExampleCellC.swift */,
-			);
-			path = CollectionViewCells;
-			sourceTree = "<group>";
-		};
 		F2F95D2B1F74383B0049D380 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				F2F95D2C1F7438810049D380 /* CellConfigurable.swift */,
-				F2F95D411F75C0DC0049D380 /* DataProvider.swift */,
+				4CE43CE21F7C0B14004B9FAD /* ViewModel.swift */,
+				4CE43CE41F7C0B2A004B9FAD /* ExpressibleInterface.swift */,
+				4CE43CE61F7C0B44004B9FAD /* ExpressedAsView.swift */,
+				4CE43CE81F7C0B67004B9FAD /* ExpressibleCollectionViewCell.swift */,
+				4CE43CEA1F7C0EF2004B9FAD /* ExpressedCollectionViewCellType.swift */,
+				4CE43CEC1F7C0F48004B9FAD /* ConfigurableView.swift */,
+				4CE43D051F7C13E8004B9FAD /* NibDefinedBaseView.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -115,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				F2F95D2E1F74392F0049D380 /* Items.swift */,
+				4CE43CEE1F7C0F64004B9FAD /* Animal.swift */,
+				4CE43CFB1F7C116F004B9FAD /* Car.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				F2F95D301F7441920049D380 /* CollectionViewDataSource.swift */,
-				F2F95D331F758B890049D380 /* ArrayDataSource.swift */,
 			);
 			path = CollectionViewDataSources;
 			sourceTree = "<group>";
@@ -188,9 +264,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA17E151F7C4A93007EBE49 /* CarDetailView.xib in Resources */,
 				F2F95D191F72F9FC0049D380 /* LaunchScreen.storyboard in Resources */,
+				4CE43D0E1F7C152E004B9FAD /* AnimalCollectionViewCell.xib in Resources */,
+				4CE43D121F7C154E004B9FAD /* CarDetailCollectionViewCell.xib in Resources */,
 				F2F95D161F72F9FC0049D380 /* Assets.xcassets in Resources */,
+				4CE43D141F7C155F004B9FAD /* AnimalView.xib in Resources */,
 				F2F95D141F72F9FC0049D380 /* Main.storyboard in Resources */,
+				4CE43D0C1F7C1503004B9FAD /* AnimalDetailCollectionViewCell.xib in Resources */,
+				4CE43D101F7C153B004B9FAD /* CarCollectionViewCell.xib in Resources */,
+				4CE43D161F7C1574004B9FAD /* CarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,16 +284,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F95D341F758B890049D380 /* ArrayDataSource.swift in Sources */,
+				4CE43CEF1F7C0F64004B9FAD /* Animal.swift in Sources */,
+				4CE43CE31F7C0B14004B9FAD /* ViewModel.swift in Sources */,
+				4CE43CF21F7C0F8A004B9FAD /* AnimalViewModel.swift in Sources */,
 				F2F95D111F72F9FC0049D380 /* ViewController.swift in Sources */,
-				F2F95D2D1F7438810049D380 /* CellConfigurable.swift in Sources */,
-				F2F95D261F7437F80049D380 /* ExampleCellA.swift in Sources */,
+				4CE43CFE1F7C1183004B9FAD /* CarViewModel.swift in Sources */,
 				F2F95D0F1F72F9FC0049D380 /* AppDelegate.swift in Sources */,
-				F2F95D421F75C0DC0049D380 /* DataProvider.swift in Sources */,
+				4CE43D021F7C126F004B9FAD /* CarView.swift in Sources */,
+				4CE43D061F7C13E8004B9FAD /* NibDefinedBaseView.swift in Sources */,
+				4CA17E131F7C4A89007EBE49 /* CarDetailView.swift in Sources */,
+				4CE43CE91F7C0B67004B9FAD /* ExpressibleCollectionViewCell.swift in Sources */,
+				4CE43D041F7C12AC004B9FAD /* CarDetailCollectionViewCell.swift in Sources */,
 				F2F95D311F7441920049D380 /* CollectionViewDataSource.swift in Sources */,
+				4CE43CED1F7C0F48004B9FAD /* ConfigurableView.swift in Sources */,
+				4CE43CEB1F7C0EF2004B9FAD /* ExpressedCollectionViewCellType.swift in Sources */,
+				4CE43CF81F7C1011004B9FAD /* AnimalDetailCollectionViewCell.swift in Sources */,
+				4CE43CFC1F7C116F004B9FAD /* Car.swift in Sources */,
+				4CE43CE51F7C0B2A004B9FAD /* ExpressibleInterface.swift in Sources */,
+				4CE43D001F7C124E004B9FAD /* CarCollectionViewCell.swift in Sources */,
 				F2F95D2F1F74392F0049D380 /* Items.swift in Sources */,
-				F2F95D2A1F7438150049D380 /* ExampleCellC.swift in Sources */,
-				F2F95D281F7438060049D380 /* ExampleCellB.swift in Sources */,
+				4CE43D081F7C1403004B9FAD /* NibDefinedView.swift in Sources */,
+				4CE43CF51F7C0FED004B9FAD /* AnimalView.swift in Sources */,
+				4CE43CE71F7C0B44004B9FAD /* ExpressedAsView.swift in Sources */,
+				4CE43CFA1F7C109D004B9FAD /* AnimalCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
