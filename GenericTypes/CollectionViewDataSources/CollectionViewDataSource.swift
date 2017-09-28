@@ -9,7 +9,10 @@
 import Foundation
 import UIKit
 
-class CollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class CollectionViewDataSource: NSObject, UICollectionViewDataSource, ExpressibleCollectionViewCell {
+    var cellClassName: String = "\(self.self)"
+    var collectionViewCellSize: CGSize? = .zero
+    
     private let dataSource: [[ExpressibleCollectionViewCell]]
     
     public init(items: [[ExpressibleCollectionViewCell]]) {
@@ -24,16 +27,11 @@ class CollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSource, UI
     public convenience init(items: ExpressibleCollectionViewCell...) {
         self.init(items: items)
     }
-
-    public func register(with collectionView: UICollectionView) {
-        precondition(dataSource.count > 0, "Must have at least 1 item.")
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        registerCells(with: collectionView)
-    }
     
-    private func registerCells(with collectionView: UICollectionView) {
-        let flattendDataSource = dataSource.flatMap{ $0 }
+    public func registerCells(with collectionView: UICollectionView) {
+        // TODO: revisit this, to have everything loaded up front, at once, flattened or have each cell register
+        // documentation says its safe but, how much overhead would it be to constantly overwrite the last registration and loading of the same nib?
+        let flattendDataSource = dataSource.flatMap { $0 }
         let uniqueCellNames:Set<String> = Set(flattendDataSource.flatMap({ $0.cellClassName }))
         
         for cellName in uniqueCellNames {
@@ -47,15 +45,32 @@ class CollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSource, UI
         return item.collectionView(collectionView, cellForItemAt: indexPath)
     }
     
-    public func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return dataSource.count
-    }
-    
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource[section].count
     }
     
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return dataSource.count
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let item = dataSource[indexPath.section][indexPath.row]
+        return item.collectionView(collectionView, viewForSupplementaryElementOfKind: kind, at: indexPath)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
+        let item = dataSource[indexPath.section][indexPath.row]
+        return item.collectionView(collectionView, canMoveItemAt: indexPath)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        // DEFINITELY AN ISSUE HERE
+        let item = dataSource[destinationIndexPath.section][destinationIndexPath.row]
+        return item.collectionView(collectionView, moveItemAt: sourceIndexPath, to: destinationIndexPath)
+    }
+    
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return dataSource[indexPath.section][indexPath.row].collectionViewCellSize ?? .zero
+        let item = dataSource[indexPath.section][indexPath.row]
+        return item.collectionView(collectionView, layout: collectionViewLayout, sizeForItemAt: indexPath)
     }
 }

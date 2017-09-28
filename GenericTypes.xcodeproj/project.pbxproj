@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C54E41F1F7DA5A7007902F6 /* CollectionViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C54E41E1F7DA5A7007902F6 /* CollectionViewHandler.swift */; };
 		4CA17E131F7C4A89007EBE49 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA17E121F7C4A89007EBE49 /* CarDetailView.swift */; };
 		4CA17E151F7C4A93007EBE49 /* CarDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA17E141F7C4A93007EBE49 /* CarDetailView.xib */; };
 		4CE43CE31F7C0B14004B9FAD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE43CE21F7C0B14004B9FAD /* ViewModel.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C54E41E1F7DA5A7007902F6 /* CollectionViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHandler.swift; sourceTree = "<group>"; };
 		4CA17E121F7C4A89007EBE49 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
 		4CA17E141F7C4A93007EBE49 /* CarDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarDetailView.xib; sourceTree = "<group>"; };
 		4CE43CE21F7C0B14004B9FAD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				F2F95D301F7441920049D380 /* CollectionViewDataSource.swift */,
+				4C54E41E1F7DA5A7007902F6 /* CollectionViewHandler.swift */,
 			);
 			path = CollectionViewDataSources;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				4CE43CEF1F7C0F64004B9FAD /* Animal.swift in Sources */,
 				4CE43CE31F7C0B14004B9FAD /* ViewModel.swift in Sources */,
 				4CE43CF21F7C0F8A004B9FAD /* AnimalViewModel.swift in Sources */,
+				4C54E41F1F7DA5A7007902F6 /* CollectionViewHandler.swift in Sources */,
 				F2F95D111F72F9FC0049D380 /* ViewController.swift in Sources */,
 				4CE43CFE1F7C1183004B9FAD /* CarViewModel.swift in Sources */,
 				F2F95D0F1F72F9FC0049D380 /* AppDelegate.swift in Sources */,

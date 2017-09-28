@@ -11,7 +11,7 @@ import CoreData
 class ViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
-    private var collectionViewDataSourceDelegate: CollectionViewDataSourceDelegate!
+    private var collectionViewHandler: CollectionViewHandler!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,8 @@ class ViewController: UIViewController {
         var allViewModels = animalViewModels + carViewModels
         allViewModels.append(CarDetailViewModel(data: cars[0]))
         
-        collectionViewDataSourceDelegate = CollectionViewDataSourceDelegate(items: allViewModels)
-        collectionViewDataSourceDelegate.register(with: collectionView)
+        let collectionViewDataSource = CollectionViewDataSource(items: allViewModels)
+        collectionViewHandler = CollectionViewHandler(dataSource: collectionViewDataSource)
+        collectionViewHandler.register(with: collectionView)
     }
 }
